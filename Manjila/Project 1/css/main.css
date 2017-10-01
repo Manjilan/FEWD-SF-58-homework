@@ -19,7 +19,6 @@ body{
 .half-width{
 	width: 50%;
 	float: left;
-    /*display: flex;*/
     flex-wrap: wrap;
 }
 
@@ -51,16 +50,6 @@ body{
     height: auto;
 }
 
-/*header h1 { 
-    padding: 50px 0;
-    font-family: 'Lora', serif;
-    font-size: 30px;
-    color: #55552b;
-    flex-wrap: wrap;
-}*/
-
-
-
 header .full-width {
 align-items: right;
 text-align: center;
@@ -70,12 +59,6 @@ width: 100%;
 .fixed-background{
    
 }
-/*button{
-    border-radius: 5px;
-    width: 20%;
-    padding: 10px;
-    color: white;
-}*/
 
 i{
     color: white;
@@ -200,7 +183,7 @@ a:hover{
     width: 80%;
 }
 
-#contact h2, #email-header, #socialmedia-header, #contact ul {
+#contact h2, #email-header, #socialmedia-header{
     padding-left: 115px;
 }
 
@@ -212,6 +195,7 @@ a:hover{
 #contact h2 {
     font-family: 'Lora', serif;
     font-size: 36px;
+    padding-bottom: 15px;
 }
 
 #email-header{
@@ -231,6 +215,10 @@ a:hover{
     color: grey;
     font-weight: bold;
     font-size: 28px;
+}
+
+footer ul{
+    text-align: center;
 }
 
 i{
@@ -259,10 +247,13 @@ i:hover{
 #contact ul img {
     padding-right: 48px;
 }
+
 .half-width a{
     display: flex;
     flex-wrap: wrap;
 }
+
+/***** INSPIRATION *****/
 
 .inspo{
     text-align: center;
@@ -303,25 +294,66 @@ i:hover{
     line-height: 40px;
 }
 
-footer ul{
-    text-align: center;
+/***** MODAL *****/
+
+button{
+    margin-left: 45%;
+    margin-right: 40%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    padding: 5px 50px 5px 50px;
+    text-transform: uppercase;
+    background-color: white;
+    font-family: 'Lora', serif;
+    color: #828282;
 }
 
-footer ul li{
-    padding: 0 50px 0 50px;
+input{
+    display: block;
+    margin-left: 30%;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+textarea{
+    margin-left: 11%;
+    width: 50%;
+    height: 200px;
+    color: #828282;
+}
+.modal {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, .3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-content {
+  padding: 40px 20px;
+  color: #444;
+  background-color: white;
+  width: 60%;
+  text-align: center;
+}
+
+
+
 
 @media screen and (max-width: 1170px) {
-    /*h1{
-        font-size:16px;
-    }*/
     header h2{
         font-size: 45px;
         padding: 10px;
     }
 
-    }
-    @media screen and (max-width: 950px) {
+}
+@media screen and (max-width: 950px) {
        
     #contact-img{
         display:block;
@@ -337,3 +369,7 @@ footer ul li{
         margin-top: 10px;
     }
 }
+
+@media screen and (max-width: 660px) {
+
+    }

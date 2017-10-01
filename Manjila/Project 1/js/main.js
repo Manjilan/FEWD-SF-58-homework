@@ -1,11 +1,12 @@
 $('.fa-toggle-on').on('click', function(){
- 
- 	$(".fixed-background i").addClass("fa-flip-horizontal");
- 	$("header").removeClass("fixed-background");
- 	$("header").addClass("change");
+ $(".fixed-background i").toggleClass("fa-flip-horizontal");
+ $("header").toggleClass("change");
 });
-$('.fa-flip-horizontal').on('click', function(){
-	$('.fixed-background i').removeClass('fa-flip-horizontal');
-	$("header").removeClass("change");
- 	$("header").addClass("fixed-background");
+$('#showModal').on('click', function(){
+	$('.modal').css('display', 'flex').hide().fadeIn();
+});
+
+$('#close').on('click', function(){
+	$('#close').text('Thanks');
+	$('.modal').fadeOut();
 });
